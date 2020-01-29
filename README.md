@@ -7,7 +7,9 @@ AFP-LSE: Antifreeze Proteins Prediction Using Latent Space Encoding of Compositi
 - Keras = 2.2.4
 
 # Description
-The deep learning model is implemented using Python on Keras (Tensorflow). The necessary files to run the model have been uploaded. 
+The deep auto-encoder based learning model is implemented using Python on Keras (Tensorflow). The latent space is the learned representation in which the input data is condensed into a code. The decoder tries to reconstruct the original input from this code. The latent space is also serving as the input to the fully connected four layered MLP based classifier. This classifier learns to make predictions using the condensed and denoised input represented by latent space variables. 
+The training is performed with the motive of decreasing the decoder loss and to increase the classifier's accuracy.
+
 For verification purposes, a trained model has been uploaded with necessary data files. For self implementation, the model file has also been uploaded and the procedure of extracting features is described below.
 
 # Dataset
@@ -27,7 +29,6 @@ The CKSAAP feature descriptors can be extracted using the command:
 **path/iFeature-master>python iFeature.py --file xyz/test-protein.txt --type CKSAAP --out xyz/test-protein-features.txt**
 
 The CKSAAP feature encoding calculates the frequency of amino acid pairs separated by any k residues. The default value of k is 5. To change the default value of k, open "CKSAAP.py" and replace gap="5" in line # 20 to any other integer > 0. A file named "placeholder.txt" has been uploaded with the aforementioned modification in line 20 of "CKSAAP.py".  The features used in this paper were extracted by selecting the value of k=8.
-
 
 # References
 [1] Kandaswamy, Krishna Kumar, et al. "AFP-Pred: A random forest approach for predicting antifreeze proteins from sequence-derived properties." Journal of theoretical biology 270.1 (2011): 56-62.
