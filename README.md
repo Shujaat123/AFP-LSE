@@ -21,6 +21,7 @@ This scheme reflects the amino acid pair information in small and large range wi
 
 The encoding scheme is utilized from iFeature web server using following download link: 
 (https://github.com/Superzchen/iFeature)
+Chen Z, Zhao P, Li F, Leier A, Marquez-Lago TT, Wang Y, Webb GI, Smith AI, Daly RJ*, Chou KC*, Song J*. iFeature: a python package and web server for features extraction and selection from protein and peptide sequences. Bioinformatics, 2018, Volume 34, Issue 14, 15 July 2018, Pages 2499–2502, doi: 10.1093/bioinformatics/bty140.
 
 # Feature Extraction
 The CKSAAP feature descriptors can be extracted using the command: 
