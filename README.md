@@ -11,7 +11,7 @@ The deep learning model is implemented using Python on Keras (Tensorflow). The n
 For verification purposes, a trained model has been uploaded with necessary data files. For self implementation, the model file has also been uploaded and the procedure of extracting features is described below.
 
 # Dataset
-The dataset is obtained from Kandaswamy et. al containing 481 antifreeze proteins and 9193 non-antifreeze proteins.
+The dataset is obtained from Kandaswamy et. al [1], containing 481 antifreeze proteins and 9193 non-antifreeze proteins.
 A dataset file named "Dataset.csv" contains the aforementioned samples.
 
 # Features
@@ -20,7 +20,7 @@ The features from the dataset are extracted using CKSAAP encoding scheme.
 # Feature Extraction
 The CKSAAP encoding scheme reflects the amino acid pair information in small and large range with in the peptides depending upon the value of k(gap).
 
-The encoding scheme is utilized from iFeature web server [1] using following download link: 
+The encoding scheme is utilized from iFeature web server [2], using the following download link: 
 (https://github.com/Superzchen/iFeature)
 The CKSAAP feature descriptors can be extracted using the command: 
 
@@ -32,4 +32,6 @@ A sample feature file has been uploaded named "Sample_Features.csv"
 
 
 # References
-[1] Chen Z, Zhao P, Li F, Leier A, Marquez-Lago TT, Wang Y, Webb GI, Smith AI, Daly RJ*, Chou KC*, Song J*. iFeature: a python package and web server for features extraction and selection from protein and peptide sequences. Bioinformatics, 2018, Volume 34, Issue 14, 15 July 2018, Pages 2499–2502, doi: 10.1093/bioinformatics/bty140.
+[1] Kandaswamy, Krishna Kumar, et al. "AFP-Pred: A random forest approach for predicting antifreeze proteins from sequence-derived properties." Journal of theoretical biology 270.1 (2011): 56-62.
+
+[2] Chen Z, Zhao P, Li F, Leier A, Marquez-Lago TT, Wang Y, Webb GI, Smith AI, Daly RJ*, Chou KC*, Song J*. iFeature: a python package and web server for features extraction and selection from protein and peptide sequences. Bioinformatics, 2018, Volume 34, Issue 14, 15 July 2018, Pages 2499–2502, doi: 10.1093/bioinformatics/bty140.
