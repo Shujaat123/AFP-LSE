@@ -16,14 +16,12 @@ A dataset file named "Dataset.csv" contains the aforementioned samples.
 
 # Features
 The features from the dataset are extracted using CKSAAP encoding scheme. 
+
 # Feature Extraction
-This scheme reflects the amino acid pair information in small and large range with in the peptides depending upon the value of k(gap).
+The CKSAAP encoding scheme reflects the amino acid pair information in small and large range with in the peptides depending upon the value of k(gap).
 
 The encoding scheme is utilized from iFeature web server [1] using following download link: 
 (https://github.com/Superzchen/iFeature)
-
-
-# Feature Extraction
 The CKSAAP feature descriptors can be extracted using the command: 
 
 **path/iFeature-master>python iFeature.py --file xyz/test-protein.txt --type CKSAAP --out xyz/test-protein-features.txt**
