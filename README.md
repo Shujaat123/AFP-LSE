@@ -28,8 +28,6 @@ The CKSAAP feature descriptors can be extracted using the command:
 
 The CKSAAP feature encoding calculates the frequency of amino acid pairs separated by any k residues. The default value of k is 5. To change the default value of k, open "CKSAAP.py" and replace gap="5" in line # 20 to any other integer > 0. A file named "placeholder.txt" has been uploaded with the aforementioned modification in line 20 of "CKSAAP.py".  The features used in this paper were extracted by selecting the value of k=8.
 
-A sample feature file has been uploaded named "Sample_Features.csv"
-
 
 # References
 [1] Kandaswamy, Krishna Kumar, et al. "AFP-Pred: A random forest approach for predicting antifreeze proteins from sequence-derived properties." Journal of theoretical biology 270.1 (2011): 56-62.
