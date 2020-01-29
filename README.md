@@ -16,9 +16,6 @@ For verification purposes, a trained model has been uploaded with necessary data
 The dataset is obtained from Kandaswamy et. al [1], containing 481 antifreeze proteins and 9193 non-antifreeze proteins.
 A dataset file named "Dataset.csv" contains the aforementioned samples.
 
-# Features
-The features from the dataset are extracted using CKSAAP encoding scheme. 
-
 # Feature Extraction
 The CKSAAP encoding scheme reflects the amino acid pair information in small and large range with in the peptides depending upon the value of k(gap).
 
