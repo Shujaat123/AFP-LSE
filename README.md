@@ -16,12 +16,12 @@ A dataset file named "Dataset.csv" contains the aforementioned samples.
 
 # Features
 The features from the dataset are extracted using CKSAAP encoding scheme. 
-# Composition of k-Spaced Amino Acid Pairs (CKSAAP)
+# Feature Extraction
 This scheme reflects the amino acid pair information in small and large range with in the peptides depending upon the value of k(gap).
 
-The encoding scheme is utilized from iFeature web server using following download link: 
+The encoding scheme is utilized from iFeature web server [1] using following download link: 
 (https://github.com/Superzchen/iFeature)
-Chen Z, Zhao P, Li F, Leier A, Marquez-Lago TT, Wang Y, Webb GI, Smith AI, Daly RJ*, Chou KC*, Song J*. iFeature: a python package and web server for features extraction and selection from protein and peptide sequences. Bioinformatics, 2018, Volume 34, Issue 14, 15 July 2018, Pages 2499–2502, doi: 10.1093/bioinformatics/bty140.
+
 
 # Feature Extraction
 The CKSAAP feature descriptors can be extracted using the command: 
@@ -33,3 +33,5 @@ The CKSAAP feature encoding calculates the frequency of amino acid pairs separat
 A sample feature file has been uploaded named "Sample_Features.csv"
 
 
+# References
+[1] Chen Z, Zhao P, Li F, Leier A, Marquez-Lago TT, Wang Y, Webb GI, Smith AI, Daly RJ*, Chou KC*, Song J*. iFeature: a python package and web server for features extraction and selection from protein and peptide sequences. Bioinformatics, 2018, Volume 34, Issue 14, 15 July 2018, Pages 2499–2502, doi: 10.1093/bioinformatics/bty140.
