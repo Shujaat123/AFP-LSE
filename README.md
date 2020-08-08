@@ -1,5 +1,10 @@
 # AFP-LSE
 AFP-LSE: Antifreeze Proteins Prediction Using Latent Space Encoding of Composition of k-Spaced Amino Acid Pairs
+https://www.nature.com/articles/s41598-020-63259-2.pdf
+
+# Citation
+Usman, M., Khan, S. & Lee, J. AFP-LSE: Antifreeze Proteins Prediction Using Latent Space Encoding of Composition of k-Spaced Amino Acid Pairs. Sci Rep 10, 7197 (2020). https://doi.org/10.1038/s41598-020-63259-2
+
 
 # Requirements
 - Python >= 3.5.4
@@ -26,6 +31,7 @@ The CKSAAP feature descriptors can be extracted using the command:
 **path/iFeature-master>python iFeature.py --file xyz/test-protein.txt --type CKSAAP --out xyz/test-protein-features.txt**
 
 The CKSAAP feature encoding calculates the frequency of amino acid pairs separated by any k residues. The default value of k is 5. To change the default value of k, open "CKSAAP.py" and replace gap="5" in line # 20 to any other integer > 0. A file named "placeholder.txt" has been uploaded with the aforementioned modification in line 20 of "CKSAAP.py".  The features used in this paper were extracted by selecting the value of k=8.
+
 
 # References
 [1] Kandaswamy, Krishna Kumar, et al. "AFP-Pred: A random forest approach for predicting antifreeze proteins from sequence-derived properties." Journal of theoretical biology 270.1 (2011): 56-62.
